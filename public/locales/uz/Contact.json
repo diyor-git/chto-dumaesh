@@ -1,0 +1,12 @@
+{
+  "leaveRequest": "So'rov qoldiring",
+  "description": "Sizning markazingiz tez orada bizning ro'yxatimizda bo'ladi. Faqat quyidagi shaklni to'ldirish qoladi va biz siz bilan bog'lanamiz",
+  "yourName": "To'liq ismingiz (FIO)",
+  "nameSimple": "Ahmedov Shahzod Baxtierovich",
+  "nameOrganization": "Tashkilot nomi:",
+  "organizationSimple": "'Tashkilot' MChJ",
+  "phone": "Aloqa raqami:",
+  "comment": "Arizaga izohlar:",
+  "commentSimple": "Sizning izohingiz ...",
+  "send": "Xabar yuboring"
+}

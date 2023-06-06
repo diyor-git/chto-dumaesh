@@ -1,0 +1,147 @@
+.purpose {
+  margin-top: 150px;
+}
+
+.purpose__title {
+  color: var(--color-dark-grey);
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 37px;
+}
+
+.purpose-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.purpose__img__container {
+  width: auto;
+  height: 100%;
+}
+
+.purpose__info {
+  width: 420px;
+}
+
+.purpose__info__title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.purpose__info__description {
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1200px) {
+  .purpose {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .purpose__title {
+    font-size: 64px;
+    margin-bottom: 60px;
+  }
+
+  .purpose__img {
+    width: 525px;
+    height: 360px;
+  }
+
+  .purpose__info {
+    width: 570px;
+  }
+
+  .purpose__info__title {
+    font-size: 24px;
+    letter-spacing: 0.02em;
+    margin-bottom: 15px;
+  }
+
+  .purpose__info__description {
+    font-size: 20px;
+    letter-spacing: 0.02em;
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 696px) and (max-width: 970px) {
+  .purpose {
+    margin-top: 120px;
+  }
+
+  .purpose__title {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+
+  .purpose-box {
+    flex-direction: column;
+  }
+
+  .purpose__img__container {
+    margin-bottom: 30px;
+  }
+
+  .purpose__img {
+    width: 455px;
+    height: 330px;
+  }
+
+  .purpose__info {
+    width: 648px;
+  }
+
+  .purpose__info__title {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .purpose__info__description {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 695px) {
+  .purpose {
+    margin-top: 110px;
+  }
+
+  .purpose__title {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+
+  .purpose-box {
+    flex-direction: column;
+  }
+
+  .purpose__img__container {
+    margin-bottom: 40px;
+  }
+
+  .purpose__img {
+    width: 249px;
+    height: 171px;
+  }
+
+  .purpose__info {
+    width: 100%;
+  }
+
+  .purpose__info__title {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .purpose__info__description {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+}

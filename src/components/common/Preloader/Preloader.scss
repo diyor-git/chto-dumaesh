@@ -1,0 +1,10 @@
+.preloader {
+  width: 150px;
+  left: 0;
+  right: 0;
+  position: relative;
+  margin: 100px auto 50px auto;
+  img {
+    transform: translateX(-28px);
+  }
+}

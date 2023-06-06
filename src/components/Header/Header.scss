@@ -1,0 +1,800 @@
+@import "src/components/common/colors";
+
+.button {
+  background-color: transparent;
+  width: 203px;
+  height: 45px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.button:focus {
+  outline: none;
+}
+.user-icon {
+  padding: 0 5px;
+  i {
+    padding: 20px;
+    font-size: 25px;
+    cursor: pointer;
+  }
+}
+.user-content {
+  position: absolute;
+  background: rgb(0, 0, 0);
+  margin-top: 20px;
+  padding: 10px 20px;
+  h1 {
+    color: #fff;
+  }
+}
+.none {
+  display: none !important;
+}
+
+.dropdown-content {
+  display: block;
+  position: absolute;
+  transform: translateX(-50%);
+
+  margin-top: 20px;
+  background-color: #f1f1f1;
+  min-width: 190px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.dropdown-content li:nth-child(1) {
+  color: #fff !important;
+  background: #424885 !important;
+}
+.dropdown-content li {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown li:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+.block {
+  display: block !important;
+}
+
+.navbar {
+  width: 100%;
+  padding: 18px 60px;
+  box-shadow: 0 0 20px rgba(104, 104, 104, 0.17);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: #fff;
+}
+
+.search_part {
+  display: flex;
+  align-items: center;
+  form {
+    background-color: #f0f0f0;
+    margin-left: 107px;
+    i {
+      padding: 6px 10px;
+      cursor: pointer;
+    }
+  }
+}
+
+.navbar-mob {
+  display: none;
+}
+
+.navbar__button {
+  color: $blue !important;
+  border: 2px solid $blue !important;
+  background-color: #fff;
+  text-decoration: none;
+  transition: 300ms !important;
+  text-align: center;
+  padding: 5px;
+}
+.navbar__button:hover {
+  border: 2px solid #f2c94c !important;
+  color: #f2c94c !important;
+}
+.navbar__menu {
+  display: none;
+  position: absolute;
+  top: 10px;
+  margin-top: 60px;
+  padding-top: 35px;
+  padding-bottom: 60px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 9;
+  background-color: #fff;
+}
+
+.navbar__menu__item {
+  list-style: none;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.navbar__menu__item:not(:last-child) {
+  padding-bottom: 30px;
+}
+
+.navbar__menu__link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar__modal__title {
+  font-size: 24px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.navbar__modal__cards {
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar__modal__card {
+  width: 250px;
+  height: 220px;
+}
+
+.navbar__modal__card:not(:last-child) {
+  margin-right: 0;
+}
+
+.navbar__modal__card__img {
+  width: 100%;
+  height: 125px;
+  object-fit: cover;
+}
+
+.navbar__modal__info {
+  padding-left: 14px;
+  padding-right: 14px;
+  height: 115px;
+  top: 100.4%;
+  text-align: left;
+}
+
+.navbar__modal__info__title {
+  padding-top: 14px;
+  font-size: 24px;
+}
+
+.navbar__modal__link {
+  font-size: 18px;
+}
+
+.navbar__hamburger {
+  display: none;
+}
+
+.navbar__search {
+  width: 352px;
+  height: 45px;
+  padding: 13px 20px 13px 50px;
+  border: none;
+  background-image: url("../../assets/image/icons_search.svg");
+  background-position: 10px 15px;
+  background-repeat: no-repeat;
+  font-weight: 300;
+  margin-right: auto;
+  background-color: #f0f0f0;
+  font-size: 18px;
+  font-family: inherit;
+}
+
+.navbar__search::placeholder {
+  padding-left: 0;
+  font-size: 18px;
+  font-weight: 300;
+  color: $grey;
+}
+
+.search-icon {
+  position: absolute;
+  left: 230px;
+}
+
+.navbar__modal {
+  display: block;
+  position: absolute;
+  text-align: left;
+  top: 89px;
+  overflow: auto;
+  left: 0;
+  padding-left: 140px;
+  background-color: #fff;
+  width: 100%;
+  height: 450px;
+  box-shadow: 0 0 20px rgba(104, 104, 104, 0.17);
+  z-index: 99;
+}
+
+.navbar__modal__title {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  text-align: left;
+  font-size: 36px;
+  line-height: 105%;
+  color: #292929;
+}
+
+.navbar__modal__cards {
+  margin-top: 21px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+#registartion-btn {
+  margin-left: 10px;
+}
+
+.navbar__modal__card {
+  width: 250px;
+  height: 250px;
+  position: relative;
+  margin-bottom: 20px;
+  box-shadow: 0 0 20px rgba(104, 104, 104, 0.17);
+}
+
+.navbar__modal__card:not(:last-child) {
+  margin-right: 25px;
+}
+
+.navbar__modal__info {
+  padding-left: 19.23px;
+  padding-right: 19.23px;
+  position: absolute;
+  overflow: hidden;
+  left: -0.6px;
+  width: 100.6%;
+  height: 60%;
+  top: 100.4%;
+  transform: translateY(-100%);
+  background-color: #fff;
+}
+
+.navbar__modal__info__title {
+  color: var(--color-dark-grey);
+  padding-top: 19.23px;
+  font-size: 24px;
+  font-weight: 700;
+  width: 250px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 0 !important;
+}
+
+.navbar__modal__info__courses {
+  margin-top: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+
+  p {
+    padding-right: 5px;
+    color: black;
+    margin-bottom: 10px !important;
+  }
+}
+
+.navbar__modal__info__button {
+  width: 110px;
+  height: 25px;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  font-family: inherit;
+  background-color: $yellow;
+  padding: 5px 15px 1px;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+}
+
+.navbar__modal__info__button:hover {
+  color: white;
+}
+
+.navbar__modal__info__button:focus {
+  outline: none;
+}
+
+.navbar__modal__link {
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 45px;
+  font-weight: 600;
+  color: $blue;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+.buttonsHeader {
+  display: flex;
+  align-items: center;
+  .translateButtons {
+    margin: auto 45px auto auto;
+  }
+
+  button {
+    margin-right: 10px;
+    border: none;
+    background: none;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    color: #aeafb8;
+  }
+
+  .active {
+    color: #424885;
+  }
+}
+
+@media (max-width: 1200px) {
+  .navbar {
+    padding: 25px 60px;
+  }
+
+  .navbar__button {
+    font-size: 24px;
+    padding: 8.6px 38.5px;
+    width: auto;
+    height: auto;
+  }
+
+  .navbar__logo {
+    width: 53px;
+    height: 59px;
+  }
+
+  .navbar__search {
+    width: 350px;
+    height: 50px;
+    padding: 12.5px 20px 12.5px 55px;
+    margin-left: 20px !important;
+    background-position: 10px 17px;
+    font-size: 24px;
+    line-height: 25.2px;
+  }
+
+  .navbar__search::placeholder {
+    font-size: 24px;
+    line-height: 25.2px;
+  }
+
+  .search-icon {
+    left: 245px;
+    width: 25px;
+    height: 21px;
+  }
+
+  .navbar__modal {
+    top: 109px;
+  }
+
+  .navbar__modal__title {
+    margin-top: 40px;
+  }
+
+  .navbar__modal__cards {
+    margin-top: 21px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .navbar__modal__card:not(:last-child) {
+    margin-right: 25px;
+  }
+
+  .navbar__modal__card__img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .navbar__modal__info {
+    padding-left: 20px;
+    padding-right: 20px;
+    position: absolute;
+    width: 100.6%;
+    height: 50%;
+    top: 100%;
+    transform: translateY(-100%);
+    background-color: #fff;
+  }
+
+  .navbar__modal__info__title {
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    font-feature-settings: "pnum" on, "lnum" on;
+    color: #292929;
+    width: 240px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-bottom: 0 !important;
+  }
+
+  .navbar__modal__info__courses {
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 105%;
+    font-feature-settings: "pnum" on, "lnum" on;
+    color: #292929;
+    width: 206px;
+    overflow: scroll;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  .navbar__modal__info__button:focus {
+    outline: none;
+  }
+
+  .navbar__modal__link {
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-weight: 600;
+    color: $blue;
+    font-size: 24px;
+    text-decoration: none;
+  }
+
+  .container {
+    padding-top: 109px;
+  }
+}
+
+@media (min-width: 696px) and (max-width: 1200px) {
+  .navbar {
+    padding: 18px 25px;
+  }
+
+  .button {
+    width: 185px;
+    height: 40px;
+  }
+
+  .navbar__button {
+    width: auto;
+    height: auto;
+    font-size: 18px;
+    padding: 10px 15px;
+  }
+
+  .navbar__search {
+    width: 250px;
+    height: 40px;
+    margin-left: 25px;
+    font-size: 16px;
+    padding-left: 42px;
+    background-position: 10px 10px;
+  }
+
+  .navbar__logo {
+    width: 39px;
+    height: 40px;
+  }
+
+  .navbar__search::placeholder {
+    font-size: 16px;
+  }
+
+  .search-icon {
+    left: 100px;
+  }
+
+  .navbar__modal {
+    top: 81px;
+    padding-left: 60px;
+  }
+
+  .navbar__modal__card {
+    width: 205px;
+    height: 224px;
+  }
+
+  .navbar__modal__card:not(:last-child) {
+    margin-right: 16px;
+  }
+
+  .navbar__modal__info {
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 47%;
+  }
+
+  .navbar__modal__info__title {
+    padding-top: 10px;
+    font-size: 20px;
+    margin-bottom: 0 !important;
+  }
+
+  .navbar__modal__info__courses {
+    font-size: 14px;
+  }
+
+  .navbar__modal__link {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 640px) {
+  .navbar__search {
+    width: 200px !important;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 906px) {
+  .translateButtons {
+    display: none !important;
+  }
+  .translateButtons2 {
+    width: max-content;
+    margin: auto;
+  }
+  .buttonsHeader .translateButtons {
+    margin: 0 5px 0 0;
+    display: flex;
+  }
+  .navbar {
+    width: 100%;
+    padding: 7px 7px;
+  }
+  .buttonsHeader .navbar__button {
+    display: none;
+  }
+  .navbar__hamburger {
+    display: block;
+  }
+  .navbar-mob {
+    width: 100%;
+    padding: 14px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 20px rgba(104, 104, 104, 0.17);
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    background-color: #fff;
+  }
+
+  .navbar__logo {
+    width: 35px;
+    height: 35px;
+    margin-right: 15px;
+  }
+
+  .input__container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateY(89px) translateX(-50%);
+    width: 354px;
+    height: 36px;
+  }
+
+  .navbar__search {
+    width: 100%;
+    height: 100%;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .search-icon {
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .navbar__menu {
+    display: block;
+    position: absolute;
+    top: 8px;
+    padding-top: 35px;
+    padding-bottom: 60px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 9;
+    background-color: #fff;
+  }
+
+  .navbar__menu__item {
+    list-style: none;
+    font-size: 18px;
+    font-weight: 300;
+  }
+
+  .navbar__menu__item:not(:last-child) {
+    padding-bottom: 30px;
+  }
+
+  .navbar__menu__link {
+    text-decoration: none;
+    color: inherit;
+  }
+  .navbar__modal {
+    top: 60px;
+    overflow: scroll;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .navbar__modal__title {
+    font-size: 24px;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .navbar__modal__cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar__modal__card {
+    width: 250px;
+    height: 220px;
+  }
+
+  .navbar__modal__card:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .navbar__modal__card__img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .navbar__modal__info {
+    padding-left: 14px;
+    padding-right: 14px;
+    height: 115px;
+    top: 100.4%;
+    text-align: left;
+  }
+
+  .navbar__modal__info__title {
+    padding-top: 14px;
+    font-size: 24px;
+    margin-bottom: 0 !important;
+  }
+
+  .navbar__modal__link {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 460px) {
+  .navbar__search {
+    width: 135px !important;
+    height: 100%;
+    background-image: none;
+    padding: 5px;
+    margin: 0 !important;
+  }
+  .navbar__menu {
+    top: -7px;
+  }
+}
+
+@media (max-width: 390px) {
+  .user-icon {
+    .fa-user {
+      padding: 15px;
+    }
+  }
+}
+@media (max-width: 735px) {
+  .buttonsHeader {
+    .translateButtons {
+      margin: auto 15px auto auto;
+    }
+  }
+}
+.header-modal__title {
+  text-align: left !important;
+}
+.auth-button {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  button {
+    h3 {
+      transition: 300ms;
+      margin: 0;
+      transition: 0.3s;
+      margin: 0;
+      font-style: normal;
+      font-weight: 700;
+      color: var(--color-blue);
+      font-size: 16px;
+    }
+    position: relative;
+    background-color: #fff;
+    border: 2px solid var(--color-blue);
+    color: var(--color-blue);
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 57px;
+    transition: 300ms;
+  }
+  button:hover {
+    border: 2px solid #f2c94c;
+    h3 {
+      color: #f2c94c;
+    }
+  }
+  iframe {
+    position: absolute;
+    opacity: 0;
+    z-index: 1;
+    overflow: hidden;
+    border: none;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    margin: 0 auto;
+    right: 0;
+    cursor: pointer;
+  }
+}
+.auth-google-btn {
+  button:hover {
+    border: 2px solid #f2c94c !important;
+    span {
+      color: #f2c94c !important;
+    }
+  }
+  button {
+    transition: 300ms !important;
+    border: 2px solid #424885 !important;
+    box-shadow: none !important;
+    display: flex;
+    align-items: center;
+    padding: 10px 57px !important;
+    color: #424885 !important;
+    span {
+      font-size: 16px;
+      font-weight: bold !important;
+    }
+    div {
+      display: none !important;
+    }
+  }
+}

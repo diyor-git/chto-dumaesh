@@ -1,0 +1,356 @@
+/* ////////////////////////// */
+/* ///////CAROUSEL//////// */
+/* ////////////////////////// */
+
+.carousel {
+  padding-top: 40px;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.carousel-mob {
+  display: none;
+}
+
+.carousel-container {
+  display: flex; /* probably not needed, not sure */
+  justify-content: space-between; /* probably not needed, not sure */
+  flex-wrap: wrap; /* probably not needed, not sure */
+  margin: 0 auto; /* but this is needed */
+  width: 900px; /* but this is needed */
+}
+
+.swiper-slide {
+  width: 373.333px;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+.carousel__item {
+  //background-image: url('../../../assets/image/1.png');
+  width: 100%;
+  transition: 300ms;
+  height: 100%;
+  background-size: cover;
+  position: relative;
+  box-shadow: 0 10px 20px rgba(104, 104, 104, 0.17);
+  margin-bottom: 35px;
+
+  a {
+    color: unset;
+  }
+}
+
+.carousel__item + .carousel__item:not(:nth-child(4)):not(:nth-child(7)) {
+  margin-left: 10px;
+}
+
+.carousel__item__info {
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #fff;
+  padding: 15px;
+  padding-bottom: 20px;
+}
+
+.carousel__item__title {
+  color: var(--color-dark-grey);
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.carousel__item__courses {
+  display: flex;
+  font-size: 16px;
+  font-weight: 500;
+  overflow: scroll;
+
+  p {
+    width: max-content;
+    padding-right: 5px;
+    margin-bottom: 0 !important;
+  }
+
+  width: 285px;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.carousel__item__price {
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 10px;
+  overflow: scroll;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.carousel__item__button:hover {
+  background: #fff;
+  color: #424885 !important;
+  border: 1px solid #424885;
+}
+.carousel__item__button {
+  display: inline-block;
+  border: none;
+  background-color: var(--color-blue);
+  padding: 7px 13px;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 105%;
+  color: #fff !important;
+  text-decoration: none;
+  text-align: center;
+  border: 1px solid #424885;
+}
+
+.carousel__item__button:focus {
+  outline: none;
+}
+
+.swiper-carousel-slide {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 900px;
+  margin-bottom: 20px;
+}
+
+.pagination__buttons {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.pagination-carousel .swiper-pagination-bullet {
+  margin: 0 12px;
+  width: 12px;
+  height: 12px;
+}
+
+@media (max-width: 1200px) {
+  .carousel {
+    padding-top: 0;
+    margin-top: 60px;
+    max-width: 100%;
+  }
+
+  .carousel-container {
+    width: 1161px;
+  }
+
+  .carousel__item__info {
+    height: 100%;
+    padding: 20px;
+  }
+
+  .carousel__item__title {
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 105%;
+    font-feature-settings: "pnum" on, "lnum" on;
+    color: #292929;
+  }
+
+  .carousel__item__courses {
+    width: 288px;
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 105%;
+    font-feature-settings: "pnum" on, "lnum" on;
+    color: #292929;
+  }
+
+  .carousel__item__price {
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 105%;
+    font-feature-settings: "pnum" on, "lnum" on;
+    color: #000000;
+  }
+
+  .carousel__item__button {
+    font-size: 16px;
+    padding: 10px 15px;
+    line-height: 16.6px;
+  }
+}
+
+@media (min-width: 696px) and (max-width: 970px) {
+  .carousel {
+    padding-top: 40px;
+  }
+
+  .carousel-container {
+    width: 648px;
+  }
+
+  .carousel__item {
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+  }
+
+  .carousel__item + .carousel__item:not(:nth-child(4)):not(:nth-child(7)) {
+    margin-left: 16px;
+  }
+
+  .carousel__item__info {
+    left: -0.4px;
+    top: 100.3%;
+    padding: 10px 10px;
+  }
+
+  .carousel__item__title {
+    font-size: 20px;
+  }
+
+  .carousel__item__courses {
+    font-size: 14px;
+  }
+
+  .carousel__item__price {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+
+  .carousel__item__button {
+    padding: 5px 10px;
+  }
+
+  .swiper-carousel-slide {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 695px) {
+  .carousel {
+    display: none;
+  }
+
+  .carousel-mob {
+    display: block;
+    margin-top: 30px;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .carousel-container {
+    width: 354px;
+  }
+
+  .carousel__item {
+    margin-bottom: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .carousel__item + .carousel__item:not(:nth-child(4)):not(:nth-child(7)) {
+    margin-left: 0;
+  }
+
+  .carousel__item__info {
+    left: -0.6px;
+    top: 100.3%;
+    padding: 20px;
+  }
+
+  .carousel__item__title {
+    font-size: 30px;
+    margin-bottom: 5px;
+  }
+
+  .carousel__item__courses {
+    padding: 5px 0;
+    font-size: 16px;
+  }
+
+  .carousel__item__price {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+
+  .carousel__item__button {
+    padding: 10px 20px;
+  }
+
+  .swiper-carousel-slide {
+    margin-bottom: 20px;
+  }
+}
+
+$m-00: #424885;
+.centers-btn {
+  background-color: white;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  font-size: 11px;
+  color: $m-00;
+  letter-spacing: 1.2px;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  line-height: 1.6;
+  box-shadow: 0 15px 40px -10px rgba(0, 0, 0, 0.3);
+  position: relative;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 0;
+
+  span {
+    z-index: 1;
+    text-align: center;
+  }
+
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 100%;
+    top: 0;
+    transition: all 0.4s ease;
+    background-color: $m-00;
+  }
+
+  &:before {
+    left: 0;
+  }
+
+  &:after {
+    right: 0;
+  }
+
+  &:hover {
+    transition: all 0.4s ease;
+    box-shadow: 0 8px 20px -12px rgba(0, 0, 0, 0.2);
+    // letter-spacing: 2px;
+    color: white;
+
+    &:before,
+    &:after {
+      width: 51%;
+    }
+  }
+}
